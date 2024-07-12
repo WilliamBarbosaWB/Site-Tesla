@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html {
+    scroll-snap-type:y mandatory;
+}
+
+video,.imagem-tesla{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1; /*DEFINE QUEM FICA NA FRENTE DE QUEM */
+    object-fit: cover; /*DEFINE COMO QUE EU QUERO QUE MEU OBJETO FIQUE NA TELA */
+    filter: brightness(40%);/*ESSA PROPRIEDADE PERMITE MECHER COM A QUESTÃO DA OPACIDADE DO ELEMENTO */
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.subtitulo {
+    color: white;
+}
+
+.logo-tesla {
+    filter: brightness(100);
+    position: fixed;
+    width: 120px;
+}
+
+.item {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start; /*pular a seção toda para a proxima página */
+
+}
+
+.info-carro {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.info-rodape {
+    text-align: center; /*alinha os itens ao centro */
+}
+
+button {
+    background-color: rgba(34, 34, 34, 0.809);
+    color: white;
+    padding: 7px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+.botao-teste {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+.paragrafo-rodape {
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+
+.h1-texto {
+    color: rgba(27, 27, 27, 0.853);
+}
